@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    background-color: lightgray;
+    justify-content: start;
+    flex-direction: row;
+    margin: -7px;
+    width: 100vw;
+}
+
+.menu div:not(:first-child) {
+    padding-left: 50px;
+}
+
+.menu div:first-child {
+    padding-left: 25px;
+}
