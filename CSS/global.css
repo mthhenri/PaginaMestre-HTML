@@ -2,15 +2,23 @@
     display: flex;
     background-color: lightgray;
     justify-content: start;
+    justify-items: center;
     flex-direction: row;
-    margin: -7px;
-    width: 100vw;
+    border: 1px;
+    border-color: black;
+    border-style: outset;
+    width: 99vw;
 }
 
 .menu div:not(:first-child) {
-    padding-left: 50px;
+    padding-left: 75px;
 }
 
 .menu div:first-child {
     padding-left: 25px;
+    padding-top: 4.5px;
+}
+
+.menu p{
+    font-size: 25px;
 }
