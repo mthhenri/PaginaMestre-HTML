@@ -1,5 +1,5 @@
 /* Estilos utilizados no Menu do site */
-.menu {
+.menu > nav{
     display: flex;
     background-color: lightgray;
     justify-content: start;
@@ -34,25 +34,25 @@
     color: black;
 }
 
-.menu > div:nth-child(2) p:hover{
+.menu > nav div:nth-child(2) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
     color: rgb(60, 0, 74);
 }
 
-.menu > div:nth-child(3) p:hover{
+.menu > nav div:nth-child(3) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
     color: rgb(74, 0, 0);
 }
 
-.menu > div:nth-child(4) p:hover{
+.menu > nav div:nth-child(4) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
     color: rgb(69, 69, 69);
 }
 
-.menu > div:nth-child(5) p:hover{
+.menu > nav div:nth-child(5) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
     color: rgb(141, 137, 5);
@@ -61,6 +61,28 @@
 #TemaEscuro {
     margin-left: auto;
     padding-right: 15px;
+}
+
+/* Estilos do corpo do site */
+
+.corpo > div, aside, section {
+    background-color:rgb(175, 186, 193);
+    border: 1px outset black;
+    width: 99vw;
+}
+
+.corpo #infos {
+    width: 50vw;
+}
+
+.corpo aside > div {
+    border-bottom: 1px dotted black;
+}
+
+.corpo #novidades {
+    margin-left: auto;
+    width: 35vw;
+    text-align: right;
 }
 
 /* Estilos do Rodapé do site */
