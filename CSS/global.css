@@ -1,14 +1,16 @@
+/* Estilos de página do site */
+body {
+    background: #0c0808;
+}
+
 /* Estilos utilizados no Menu do site */
 .menu > nav{
     display: flex;
-    background-color: lightgray;
+    background-color: #362222;
     justify-content: start;
     justify-items: center;
     align-items: center;
     flex-direction: row;
-    border: 1px;
-    border-color: black;
-    border-style: outset;
     width: 99vw;
 }
 
@@ -22,40 +24,40 @@
 }
 
 .menu p{
+    color: whitesmoke;
     font-size: 20px;
     font-family: 'IBM Plex Sans Bold', Arial;
     text-align: center;
     font-weight: bold;
-    transition: color 2s, font-size 1s ease;
+    transition: color 1s, font-size 0.5s ease;
 }
 
 .menu a{
     text-decoration: none;
-    color: black;
 }
 
 .menu > nav div:nth-child(2) p:hover{
-    transition: color 1s, font-size 1.5s ease;
+    transition: color 0.5s, font-size 1s ease;
     font-size: 25px;
-    color: rgb(60, 0, 74);
+    color: rgb(105, 36, 195);
 }
 
 .menu > nav div:nth-child(3) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
-    color: rgb(74, 0, 0);
+    color: rgb(183, 0, 0);
 }
 
 .menu > nav div:nth-child(4) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
-    color: rgb(69, 69, 69);
+    color: rgb(122, 122, 122);
 }
 
 .menu > nav div:nth-child(5) p:hover{
     transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
-    color: rgb(141, 137, 5);
+    color: rgb(189, 183, 1);
 }
 
 #TemaEscuro {
@@ -65,49 +67,68 @@
 
 /* Estilos do corpo do site */
 
-.corpo > div, aside, section {
-    background-color:rgb(175, 186, 193);
-    border: 1px outset black;
+.corpo {
     width: 99vw;
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    grid-gap: 100px;
 }
 
-.corpo #infos {
-    width: 50vw;
+.corpo section, aside {
+    background-color: #423F3E;
+    color: whitesmoke;
 }
 
-.corpo aside > div {
-    border-bottom: 1px dotted black;
+.corpo section {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
 }
 
-.corpo #novidades {
-    margin-left: auto;
-    width: 35vw;
+.corpo > section > div > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.corpo aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
     text-align: right;
+}
+
+.corpo aside > div:not(:last-child) {
+    border-bottom: 2px dotted black;
+}
+
+.corpo aside > h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px dotted black;
+}
+
+.corpo aside > h3, h4, p {
+    padding-right: 15px;
 }
 
 /* Estilos do Rodapé do site */
 .rodape {
     display: flex;
-    background-color: lightgray;
-    justify-content: start;
+    background-color: #362222;
+    justify-content: space-between;
     justify-items: center;
     align-items: center;
     flex-direction: row;
-    border: 1px;
-    border-color: black;
-    border-style: outset;
+    margin-top: auto;
     width: 99vw;
 }
 
-.rodape div:not(:first-child) {
-    padding-left: 25px;
-}
-
-.rodape div:first-child {
+.rodape div {
     padding-left: 15px;
 }
 
 .rodape p{
+    color: whitesmoke;
     font-size: 10px;
     font-family: 'IBM Plex Sans Bold', Arial;
     text-align: center;
@@ -116,5 +137,4 @@
 
 .rodape a{
     text-decoration: none;
-    color: black;
 }
