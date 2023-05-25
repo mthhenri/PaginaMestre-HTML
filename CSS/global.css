@@ -1,8 +1,10 @@
+/* Estilos utilizados no Menu do site */
 .menu {
     display: flex;
     background-color: lightgray;
     justify-content: start;
     justify-items: center;
+    align-items: center;
     flex-direction: row;
     border: 1px;
     border-color: black;
@@ -11,14 +13,86 @@
 }
 
 .menu div:not(:first-child) {
-    padding-left: 75px;
+    padding-left: 50px;
 }
 
 .menu div:first-child {
-    padding-left: 25px;
+    padding-left: 15px;
     padding-top: 4.5px;
 }
 
 .menu p{
+    font-size: 20px;
+    font-family: 'IBM Plex Sans Bold', Arial;
+    text-align: center;
+    font-weight: bold;
+    transition: color 2s, font-size 1s ease;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu > div:nth-child(2) p:hover{
+    transition: color 1s, font-size 1.5s ease;
     font-size: 25px;
+    color: rgb(60, 0, 74);
+}
+
+.menu > div:nth-child(3) p:hover{
+    transition: color 1s, font-size 1.5s ease;
+    font-size: 25px;
+    color: rgb(74, 0, 0);
+}
+
+.menu > div:nth-child(4) p:hover{
+    transition: color 1s, font-size 1.5s ease;
+    font-size: 25px;
+    color: rgb(69, 69, 69);
+}
+
+.menu > div:nth-child(5) p:hover{
+    transition: color 1s, font-size 1.5s ease;
+    font-size: 25px;
+    color: rgb(141, 137, 5);
+}
+
+#TemaEscuro {
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+/* Estilos do Rodapé do site */
+.rodape {
+    display: flex;
+    background-color: lightgray;
+    justify-content: start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px;
+    border-color: black;
+    border-style: outset;
+    width: 99vw;
+}
+
+.rodape div:not(:first-child) {
+    padding-left: 25px;
+}
+
+.rodape div:first-child {
+    padding-left: 15px;
+}
+
+.rodape p{
+    font-size: 10px;
+    font-family: 'IBM Plex Sans Bold', Arial;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: black;
 }
