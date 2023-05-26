@@ -1,12 +1,12 @@
 /* Estilos de página do site */
 body {
-    background: #0c0808;
+    background: rgb(24, 24, 24);
 }
 
 /* Estilos utilizados no Menu do site */
 .menu > nav{
     display: flex;
-    background-color: #362222;
+    background-color: #000401;
     justify-content: start;
     justify-items: center;
     align-items: center;
@@ -76,7 +76,6 @@ body {
 }
 
 .corpo section, aside {
-    background-color: #423F3E;
     color: whitesmoke;
 }
 
@@ -103,8 +102,13 @@ body {
 }
 
 .corpo aside > h3 {
+    color: rgb(30, 114, 30);
     padding-bottom: 10px;
     border-bottom: 2px dotted black;
+}
+
+.corpo aside > h4 {
+    color: rgb(0, 74, 0);
 }
 
 .corpo aside > h3, h4, p {
@@ -114,7 +118,7 @@ body {
 /* Estilos do Rodapé do site */
 .rodape {
     display: flex;
-    background-color: #362222;
+    background-color: #000000;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
