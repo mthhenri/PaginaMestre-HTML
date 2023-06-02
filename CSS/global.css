@@ -65,9 +65,9 @@ body {
     padding-right: 15px;
 }
 
-/* Estilos do corpo do site */
+/* Estilos do corpo do site na páfina inicial */
 
-.corpo {
+#homePG .corpo {
     width: 98.5vw;
     display: grid;
     grid-template-columns: auto auto 35%;
@@ -75,58 +75,91 @@ body {
     grid-gap: 250px;
 }
 
-.corpo section, aside {
+#homePG .corpo section, aside {
     color: whitesmoke;
 }
 
-/* Estilos de section */
+/* Estilos de section na pagina inicial*/
 
-.corpo section {
+#homePG .corpo section {
     grid-column: 1 / 3;
     grid-row: 1 / 5;
     padding-left: 10px;
     height: fit-content;
 }
 
-.corpo > section > div > a{
+#homePG .corpo > section > div > a{
     text-decoration: none;
     color: whitesmoke;
 }
 
-.corpo section h4 {
+#homePG .corpo section h4 {
     font-size: 20px;
     color: rgb(0, 167, 0);
 }
 
-.corpo section p {
+#homePG .corpo section p {
     border-bottom: 2px dotted black;
     padding-bottom: 10px;
 }
 
-/* Estilos de aside */
+/* Estilos de aside na pagina inicial*/
 
-.corpo aside {
+#homePG .corpo aside {
     grid-column: 3 / 4;
     grid-row: 1 / 5;
     text-align: right;
 }
 
-.corpo aside > div:not(:last-child) {
+#homePG .corpo aside > div:not(:last-child) {
     border-bottom: 2px dotted black;
 }
 
-.corpo aside > h3 {
+#homePG .corpo aside > h3 {
     color: rgb(38, 144, 38);
     padding-bottom: 10px;
     border-bottom: 2px dotted black;
 }
 
-.corpo aside h4 {
+#homePG .corpo aside h4 {
     color: rgb(0, 167, 0);
 }
 
-.corpo aside > h3, h4, p {
+#homePG .corpo aside > h3, h4, p {
     padding-right: 15px;
+}
+
+/* Estilos do corpo do site na página de contato */
+
+#contatoPG .corpo {
+    width: 98.5vw;
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    grid-gap: 250px;
+}
+
+#contatoPG .corpo section, aside {
+    color: whitesmoke;
+}
+
+/* Estilos de section na pagina de contato */
+
+#contatoPG .corpo section {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#contatoPG .corpo > section > div > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#contatoPG .corpo section h4 {
+    font-size: 20px;
+    color: rgb(0, 167, 0);
 }
 
 /* Estilos do Rodapé do site */
