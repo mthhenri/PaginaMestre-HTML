@@ -11,7 +11,7 @@ body {
     justify-items: center;
     align-items: center;
     flex-direction: row;
-    width: 99vw;
+    width: 98.5vw;
 }
 
 .menu div:not(:first-child) {
@@ -68,11 +68,11 @@ body {
 /* Estilos do corpo do site */
 
 .corpo {
-    width: 99vw;
+    width: 98.5vw;
     display: grid;
     grid-template-columns: auto auto 35%;
     grid-template-rows: repeat(2, max-content);
-    grid-gap: 100px;
+    grid-gap: 250px;
 }
 
 .corpo section, aside {
@@ -138,7 +138,7 @@ body {
     align-items: center;
     flex-direction: row;
     margin-top: auto;
-    width: 99vw;
+    width: 98.5vw;
 }
 
 .rodape div {
@@ -151,8 +151,14 @@ body {
     font-family: 'IBM Plex Sans Bold', Arial;
     text-align: center;
     font-weight: bold;
+    transition: color 0.6s ease;
 }
 
 .rodape a{
     text-decoration: none;
+}
+
+.rodape p:hover{
+    color: green;
+    transition: color 1s ease;
 }
