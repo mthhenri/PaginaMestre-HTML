@@ -162,6 +162,22 @@ body {
     color: rgb(0, 167, 0);
 }
 
+/* Estilos de aside na pagina de contato*/
+
+#contatoPG .corpo aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    text-align: right;
+}
+
+#contatoPG .corpo aside h4 {
+    color: rgb(0, 167, 0);
+}
+
+#contatoPG .corpo aside > h3, h4, p {
+    padding-right: 15px;
+}
+
 /* Estilos do Rodapé do site */
 .rodape {
     display: flex;
