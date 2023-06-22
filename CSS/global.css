@@ -366,7 +366,69 @@ body {
 #darkness .corpo section > div{
     border-bottom: 2px dotted black;
 }
-  
+
+/* Estilos da página de Contratados */
+
+#contratados .corpo {
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    
+}
+
+#contratados section{
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#contratados aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#contratados .corpo h4 {
+    font-size: 24px;
+    color: rgb(0, 167, 0);
+}
+
+#contratados .corpo h3 {
+    font-size: 24px;
+    color: rgb(38, 144, 38);
+}
+
+#contratados .corpo p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#contratados .corpo section > div{
+    border-bottom: 2px dotted black;
+}
+
+#contratados .corpo aside p{
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+}
+ 
+#contratados .corpo a{
+    text-decoration: none;
+    color: rgb(66, 222, 66);
+    transition: color 0.5s ease-in-out;
+}
+
+#contratados .corpo a:hover{
+    color: rgb(11, 118, 11);
+    transition: color 0.5s ease-in-out;
+}
+
+/* Estilo da página de Renascer */
+
+
 /* Estilos do Rodapé do site */
 .rodape {
     display: flex;
