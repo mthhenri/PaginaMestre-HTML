@@ -23,7 +23,7 @@ body {
     padding-top: 4.5px;
 }
 
-.menu p{
+.menu p, a{
     color: whitesmoke;
     font-size: 20px;
     font-family: 'IBM Plex Sans Bold', Arial;
@@ -63,6 +63,10 @@ body {
 #TemaEscuro {
     margin-left: auto;
     padding-right: 15px;
+}
+
+#TemaEscuro > a {
+    text-decoration: none;
 }
 
 /* Estilos do corpo do site na página inicial */
@@ -132,6 +136,7 @@ body {
 #homePG .corpo aside a {
     text-decoration: none;
     color: rgb(14, 96, 14);
+    font-size: 15px;
     transition: color 0.5s ease-in-out;
 }
 
@@ -430,6 +435,7 @@ body {
 
 
 /* Estilos do Rodapé do site */
+
 .rodape {
     display: flex;
     background-color: #000000;
@@ -462,3 +468,7 @@ body {
     color: green;
     transition: color 1s ease;
 }
+
+/* Estilo do tema claro */
+
+/* Incompleto */

@@ -12,7 +12,7 @@
     <!-- Menu do site -->
     <div class="menu">
         <nav>
-            <div>
+            <div onclick="redirecionar()">
                 <img src="../IMG/AtualLogo V2.1.png" alt="logo" width="150px" height="75px">
             </div>
             <div>
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div id="TemaEscuro">
-                <p>Tema claro</p>
+                <a id="botaoTema" href="#" onclick="alternarTema(); return false;"><p>Tema Claro</p></a>
             </div>
         </nav>
     </div>
@@ -45,8 +45,8 @@
     <br>
     <div class="corpo">
         <!-- Barra de noticias/novidades -->
-        <aside>
-            <h3>Noticias e Novidades</h3>
+        <aside class="tema-afetado">
+            <h3 class="tema-afetado">Noticias e Novidades</h3>
             <div>
                 <h4>Missão OneShot</h4>
                 <p>A missão foi super legal, ao invés da criatura ser de Energia, ela foi de Conhecimento, o nome dela é Vislumbrador Espiral. A ficha dela pode ser acessada por <a href="https://docs.google.com/document/d/1SBdvpmHXl5ZQoUOob0rCkAisgHed91Aw81_sriLcS5g/edit" target="_blank">[ aqui ]</a>.</p>
